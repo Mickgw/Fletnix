@@ -6,49 +6,114 @@
 }
 
 :root {
-  --column-spacing: 3vw;
+  --column-spacing1: 3vw;
 }
 
 .navigatieBar {
   width: 100%;
-  height: 70px;
-  background-color: red;
-  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0);
+  height: 80px;
+  background-color: #474f91;
 }
 
 .logo {
   width: 200px;
-  font-size: 20px;
-  color: yellow;  
+  font-size: 16px;
+  color: orange;
   font-style: italic;
 }
 
 .logo h1 {
   width: 200px;
-  padding-top: 1vw;
+  padding-top: 20px;
   margin-left: 6vw;
 }
 
 .menu {
-  margin-top: 2vw;
+  margin-top: 30px;
   margin-right: 20vw;
-  z-index: 23525;
   float: right;
 }
 
 .menu a {
+  /*Haalt de normale opmaak van een link eraf*/
   text-decoration: none;
-  margin-right: var(--column-spacing);  
-  color: black;
+
+  /*Positie tussen de links*/
+
+  margin-right: var(--column-spacing1);
+
+  /*Link opmaak*/
+  color: #c9c9c9;
+  font-size: 18px;
+}
+
+.menu a:hover {
+  font-weight: bold;
+  color: white;
 }
 
 .content {
   width: 100%;
-  height: 43vw;
-  background-color: #ebebeb;
+  height: 46vw;
 }
 
 .pakkendeTitel {
   padding-top: 4vw;
   text-align: center;
 }
+
+.info {
+  /*Position*/
+  margin-top: 5vw;
+  margin-right: auto;
+  margin-left: auto;
+
+  /*Grootte section1*/
+  width: 65vw;
+  height: 35vw;
+
+  background-color: #ebebebeb;
+}
+
+.section1, .section2 {
+  /*Position*/
+  margin-left: 5%;
+
+  /*Grootte section1*/
+  width: 90%;
+  height: 50%;
+
+  /* background-color: blue; */
+}
+
+.afbeeldingSection1, .afbeeldingSection2 {
+  /*Position*/
+  float: left;
+  margin-top: 4%;
+  margin-left: 4%;
+
+  /*afbeelding*/
+  background-image: url(Afbeeldingen/abonnement.png);
+  background-size: cover;
+
+  /*afmeting afbeelding*/
+  width: 40%;
+  height: 70%;
+}
+
+.infoTekstSection1, .infoTekstSection2 {
+  /*Positie*/
+  float: right;
+  margin-top: 4%;
+  margin-right: 10%;
+
+  /*Grootte tekststukje*/
+  width: 40%;
+}
+
+.infoTekstSection1 p, .infoTekstSection2 p {
+  margin-top: 14px;
+  font-weight: 500;
+  word-spacing: 5px;
+}
+
