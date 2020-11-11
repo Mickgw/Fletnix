@@ -1,3 +1,4 @@
+/*Niet verwijderen*/
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/*Deze column spacing kan je overal gebruiken*/
 :root {
   --column-spacing1: 3vw;
 }
@@ -16,22 +18,28 @@
 }
 
 .logo {
+  /*Breedte van het vak waar de titel / logo in staat*/
   width: 200px;
+
+  /*Tekst opmaak*/
   font-size: 16px;
   color: orange;
   font-style: italic;
 }
 
 .logo h1 {
-  width: 200px;
+  /*Positie*/
   padding-top: 20px;
   margin-left: 6vw;
 }
 
 .menu {
+  /*Zet het menu rechts in de header*/
+  float: right;
+
+  /*Verdere positionering*/
   margin-top: 30px;
   margin-right: 20vw;
-  float: right;
 }
 
 .menu a {
@@ -63,7 +71,7 @@
 }
 
 .info {
-  /*Position*/
+  /*Positie*/
   margin-top: 5vw;
   margin-right: auto;
   margin-left: auto;
@@ -75,8 +83,9 @@
   background-color: #ebebebeb;
 }
 
-.section1, .section2 {
-  /*Position*/
+.section1,
+.section2 {
+  /*Positie*/
   margin-left: 5%;
 
   /*Grootte section1*/
@@ -86,8 +95,9 @@
   /* background-color: blue; */
 }
 
-.afbeeldingSection1, .afbeeldingSection2 {
-  /*Position*/
+.afbeeldingSection1,
+.afbeeldingSection2 {
+  /*Positie*/
   float: left;
   margin-top: 4%;
   margin-left: 4%;
@@ -101,7 +111,8 @@
   height: 70%;
 }
 
-.infoTekstSection1, .infoTekstSection2 {
+.infoTekstSection1,
+.infoTekstSection2 {
   /*Positie*/
   float: right;
   margin-top: 4%;
@@ -111,9 +122,9 @@
   width: 40%;
 }
 
-.infoTekstSection1 p, .infoTekstSection2 p {
+.infoTekstSection1 p,
+.infoTekstSection2 p {
   margin-top: 14px;
   font-weight: 500;
   word-spacing: 5px;
 }
-
