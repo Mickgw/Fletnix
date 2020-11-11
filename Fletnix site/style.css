@@ -14,7 +14,7 @@
 .navigatieBar {
   width: 100%;
   height: 80px;
-  background-color: #474f91;
+  background-color: #8b8b8b;
 }
 
 .logo {
@@ -23,7 +23,7 @@
 
   /*Tekst opmaak*/
   font-size: 16px;
-  color: orange;
+  color: rgb(0, 0, 0);
   font-style: italic;
 }
 
