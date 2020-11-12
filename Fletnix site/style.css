@@ -135,7 +135,7 @@
   /*afmeting afbeelding*/
   width: 40%;
   height: 70%;
-  border-radius: 25px;
+  border-radius: 1.5vw;
 }
 
 .infoTekstSection1,
@@ -155,7 +155,10 @@
 
 .infoTekstSection1 p,
 .infoTekstSection2 p {
+  /*Zet de tekst iets onder de H2*/
   margin-top: 14px;
+
+  font-size: 14px;
   font-weight: 500;
   word-spacing: 5px;
   color: white;
