@@ -1,8 +1,5 @@
 /*Niet verwijderen*/
 * {
-  /* margin: 0;
-  padding: 0;
-  box-sizing: border-box; */
   font-family: "Roboto", sans-serif;
 }
 
@@ -12,7 +9,7 @@
   --column-spacing2: 3vw;
 }
 
-.navigatieBar {
+header {
   width: 100%;
   height: 80px;
   background-image: linear-gradient(black, transparent);
@@ -31,7 +28,9 @@
 
 .logo h1 {
   /*Positie*/
-  margin-left: 6vw;
+  margin: 0 !important;
+  padding-top: 7%;
+  padding-left: 6vw;
 }
 
 .menu {
@@ -39,7 +38,7 @@
   float: right;
 
   /*Verdere positionering*/
-  margin-top: 30px;
+  margin-top: 2%;
   margin-right: 20vw;
 }
 
@@ -61,7 +60,7 @@
   color: #2e96ff;
 }
 
-.content {
+article {
   width: 100%;
   height: 46vw;
   background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5382528011204482) 51%, rgba(0,0,0,1) 100%);
@@ -167,27 +166,28 @@
 
 /*===================================Footer=========================================*/
 
-.footer {
+footer {
   background-color: black;
   width: 100%;
 }
 
-.footer .row {
+footer .row {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  flex-direction: row;
   padding-top: 2%;
 }
 
 /*Laat de columns allemaal ever ver uit elkaar staan*/
-.footer .row .column {
+footer .row .column {
   margin-left: var(--column-spacing2);
   margin-right: var(--column-spacing2);
   padding-bottom: 4%;
 }
 
 /*Geeft de titel van de footers een witte lijn */
-.footer .row .column h2 {
+footer .row .column h2 {
   font-size: 24px;
   font-family: "Red Hat Display", sans-serif;
   color: #c9c9c9;
@@ -197,23 +197,23 @@
   padding-bottom: 5px;
 }
 
-.footer .row .column ul {
+footer .row .column ul {
   list-style-type: none;
 }
 
-.footer .row .column li {
+footer .row .column li {
   color: #adadad; 
   text-decoration: none !important;
 }
 
 
 
-.footer .row .column .links a {
+footer .row .column .links a {
   color: #adadad;
   text-decoration: none;
 }
 
-.footer .row .column .links a:hover {
+footer .row .column .links a:hover {
   color: rgba(255, 255, 255, 0.2);
 }
 
@@ -225,4 +225,11 @@
   font-size: 20px;
   color: #525252;
   background-color: #1f1f1f;
+}
+
+.copyright h2 {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 100;
+
 }
