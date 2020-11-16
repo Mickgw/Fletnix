@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css"
+    />
     <link rel="stylesheet" href="style.css" />
+
+    <!--FONT-->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -13,23 +20,100 @@
     <title>Home pagina</title>
   </head>
   <body>
-    <div class="navigatieBar">
-      <div class="menu">
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="overzicht.html">Overzicht</a>
-          <a href="overOns.html">Over ons</a>
-        </nav>
-      </div>
+    <header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="overzicht.html">Film Overzicht</a>
+        <a href="overOns.html">Over ons</a>
+        <a href="abonnementen.html">Abonnementen</a>
+
+        <!--Inlog knop-->
+        <a href="loginPaginaLink">
+          <button class="button Inloggen">Inloggen</button>
+        </a>
+      </nav>
+
+      <!--Logo-->
       <div class="logo">
         <h1>Fletnix</h1>
       </div>
-    </div>
+    </header>
 
-    <div class="content">
-      <div class="pakkendeTitel">
-        <h2>Honderden films, series en documantaires</h2>
+    <article>
+      <div class="achtergrondImage">
+        <div class="achtergrondOverlay"></div>
       </div>
-    </div>
+      <div class="pakkendeTitel">
+        <h2>Honderden films, series en documentaires</h2>
+      </div>
+      <div class="info">
+        <div class="section1">
+          <div class="afbeeldingSection1"></div>
+          <div class="infoTekstSection1">
+            <h2>Abonnementen</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim.
+            </p>
+          </div>
+        </div>
+        <div class="section2">
+          <div class="afbeeldingSection2"></div>
+          <div class="infoTekstSection2">
+            <h2>Titel</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
+              sem. Nulla consequat massa quis enim.
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <div class="row">
+        <div class="column">
+          <h2>Colum 1</h2>
+          <ul>
+            <li>Link</li>
+            <li>Link</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h2>Column 2</h2>
+          <ul>
+            <li>Link</li>
+            <li>Link</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h2>Column 2</h2>
+          <ul>
+            <li>Link</li>
+            <li>Link</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <h2>Column 2</h2>
+          <ul>
+            <li>Link</li>
+            <li>Link</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <h2>© Copyright HAN</h2>
+      </div>
+    </footer>
   </body>
 </html>

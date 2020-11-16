@@ -1,54 +1,259 @@
+/*Niet verwijderen*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
+/*Deze column spacing kan je overal gebruiken*/
 :root {
-  --column-spacing: 3vw;
+  --column-spacing1: 3vw;
+  --column-spacing2: 3vw;
 }
 
-.navigatieBar {
+header {
   width: 100%;
-  height: 70px;
-  background-color: red;
-  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0);
+  height: 80px;
+  background-image: linear-gradient(black, transparent);
+  position: fixed;
 }
 
 .logo {
+  /*Breedte van het vak waar de titel / logo in staat*/
   width: 200px;
-  font-size: 20px;
-  color: yellow;  
+
+  /*Tekst opmaak*/
+  font-size: 30px;
+  color: #4fa5fc;
   font-style: italic;
 }
 
 .logo h1 {
-  width: 200px;
-  padding-top: 1vw;
-  margin-left: 6vw;
+  /*Positie*/
+  margin: 0 !important;
+  padding-top: 7%;
+  padding-left: 6vw;
 }
 
-.menu {
-  margin-top: 2vw;
-  margin-right: 20vw;
-  z-index: 23525;
+nav {
+  /*Zet het menu rechts in de header*/
   float: right;
+
+  /*Verdere positionering*/
+  margin-top: 1%;
+  margin-right: 10vw;
 }
 
-.menu a {
+nav a {
+  /*Haalt de normale opmaak van een link eraf*/
   text-decoration: none;
-  margin-right: var(--column-spacing);  
-  color: black;
+
+  /*Positie tussen de links*/
+
+  margin-right: var(--column-spacing1);
+
+  /*Link opmaak*/
+  color: #c9c9c9;
+  font-size: 18px;
 }
 
-.content {
+nav a:hover {
+  font-weight: bold;
+  color: #2e96ff;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 11px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.Inloggen {
+  background-color: #4fa5fc;
+  margin-left: 5vw;
+  font-weight: 500;
+}
+
+.Inloggen:hover {
+  background-color: #1c8dff;
+  transform: scale(1.04);
+}
+
+article {
   width: 100%;
-  height: 43vw;
-  background-color: #ebebeb;
+  height: 46vw;
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5382528011204482) 51%, rgba(0,0,0,1) 100%);
+}
+
+.achtergrondOverlay {
+  width: inherit;
+  height: inherit;
+  z-index: 999;
+  position: absolute;
+}
+
+.achtergrondImage {
+  position: absolute;
+  z-index: -1;
+  width: inherit;
+  height: inherit;
+  background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+  background-size: inherit;
+  background-repeat: repeat;
+  filter: blur(2px);
 }
 
 .pakkendeTitel {
-  padding-top: 4vw;
+  padding-top: 6vw;
   text-align: center;
+}
+
+.pakkendeTitel h2 {
+  font-size: 30px;
+  color: white;
+}
+.info {
+  /*Positie*/
+  margin-top: 4vw;
+  margin-right: auto;
+  margin-left: auto;
+
+  /*Grootte section1*/
+  width: 65vw;
+  height: 30vw;
+
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.section1,
+.section2 {
+  /*Positie*/
+  margin-left: 8%;
+
+  /*Grootte section1*/
+  width: 90%;
+  height: 50%;
+
+  /* background-color: blue; */
+}
+
+.afbeeldingSection1,
+.afbeeldingSection2 {
+  /*Positie*/
+  float: left;
+  margin-top: 4%;
+  margin-left: 4%;
+
+  /*afbeelding*/
+  background-image: url(Afbeeldingen/abonnement.png);
+  background-size: cover;
+
+  /*afmeting afbeelding*/
+  width: 40%;
+  height: 70%;
+  border-radius: 1.5vw;
+}
+
+.infoTekstSection1,
+.infoTekstSection2 {
+  /*Positie*/
+  float: right;
+  margin-top: 4%;
+  margin-right: 10%;
+
+  /*Grootte tekststukje*/
+  width: 40%;
+}
+.infoTekstSection1 h2,
+.infoTekstSection2 h2 {
+  color: white;
+  margin: 0 !important;
+}
+
+.infoTekstSection1 p,
+.infoTekstSection2 p {
+  /*Zet de tekst iets onder de H2*/
+  padding-top: 14px;
+  margin: 0 !important;
+
+  font-size: 1.03em;
+  font-weight: 500;
+  word-spacing: 5px;
+  color: white;
+}
+
+/*===================================Footer=========================================*/
+
+footer {
+  background-color: black;
+  width: 100%;
+}
+
+footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-top: 2%;
+}
+
+/*Laat de columns allemaal ever ver uit elkaar staan*/
+footer .row .column {
+  margin-left: var(--column-spacing2);
+  margin-right: var(--column-spacing2);
+  padding-bottom: 4%;
+}
+
+/*Geeft de titel van de footers een witte lijn */
+footer .row .column h2 {
+  font-size: 24px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #c9c9c9;
+  font-weight: 100;
+  border-bottom: 1px solid #6b6b6b;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+footer .row .column ul {
+  list-style-type: none;
+}
+
+footer .row .column li {
+  color: #adadad; 
+  text-decoration: none !important;
+}
+
+
+
+footer .row .column .links a {
+  color: #adadad;
+  text-decoration: none;
+}
+
+footer .row .column .links a:hover {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  border-top: 1px solid #1f1f1f;
+  width: 100%;
+  height: 2vw;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #1f1f1f;
+  background-color: black;
+}
+
+.copyright h2 {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 700;
+
 }
