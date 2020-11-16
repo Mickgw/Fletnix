@@ -11,9 +11,11 @@
 
 header {
   width: 100%;
-  height: 80px;
-  background-image: linear-gradient(black, transparent);
+  height: 4vw;
   position: fixed;
+
+  background-color: black;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 1);
 }
 
 .logo {
@@ -21,7 +23,6 @@ header {
   width: 200px;
 
   /*Tekst opmaak*/
-  font-size: 30px;
   color: #4fa5fc;
   font-style: italic;
 }
@@ -29,8 +30,10 @@ header {
 .logo h1 {
   /*Positie*/
   margin: 0 !important;
-  padding-top: 7%;
+  padding-top: 4%;
   padding-left: 6vw;
+
+  font-size: 45px;
 }
 
 nav {
@@ -51,12 +54,12 @@ nav a {
   margin-right: var(--column-spacing1);
 
   /*Link opmaak*/
-  color: #c9c9c9;
+  color: #9c9c9c;
+  font-weight: bold;
   font-size: 18px;
 }
 
 nav a:hover {
-  font-weight: bold;
   color: #2e96ff;
 }
 
@@ -86,7 +89,12 @@ nav a:hover {
 article {
   width: 100%;
   height: 46vw;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5382528011204482) 51%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 8%,
+    rgba(0, 0, 0, 0.4514180672268907) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
 }
 
 .achtergrondOverlay {
@@ -116,9 +124,9 @@ article {
   font-size: 30px;
   color: white;
 }
+
 .info {
   /*Positie*/
-  margin-top: 4vw;
   margin-right: auto;
   margin-left: auto;
 
@@ -225,11 +233,9 @@ footer .row .column ul {
 }
 
 footer .row .column li {
-  color: #adadad; 
+  color: #adadad;
   text-decoration: none !important;
 }
-
-
 
 footer .row .column .links a {
   color: #adadad;
@@ -255,5 +261,4 @@ footer .row .column .links a:hover {
   margin-top: 5px;
   font-size: 17px;
   font-weight: 700;
-
 }
