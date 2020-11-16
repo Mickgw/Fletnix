@@ -1,8 +1,8 @@
 /*Niet verwijderen*/
 * {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; */
   font-family: "Roboto", sans-serif;
 }
 
@@ -31,7 +31,6 @@
 
 .logo h1 {
   /*Positie*/
-  padding-top: 20px;
   margin-left: 6vw;
 }
 
@@ -112,7 +111,7 @@
 .section1,
 .section2 {
   /*Positie*/
-  margin-left: 5%;
+  margin-left: 8%;
 
   /*Grootte section1*/
   width: 90%;
@@ -135,7 +134,7 @@
   /*afmeting afbeelding*/
   width: 40%;
   height: 70%;
-  border-radius: 25px;
+  border-radius: 1.5vw;
 }
 
 .infoTekstSection1,
@@ -151,11 +150,16 @@
 .infoTekstSection1 h2,
 .infoTekstSection2 h2 {
   color: white;
+  margin: 0 !important;
 }
 
 .infoTekstSection1 p,
 .infoTekstSection2 p {
-  margin-top: 14px;
+  /*Zet de tekst iets onder de H2*/
+  padding-top: 14px;
+  margin: 0 !important;
+
+  font-size: 1.03em;
   font-weight: 500;
   word-spacing: 5px;
   color: white;
