@@ -121,6 +121,7 @@ article {
 }
 
 .pakkendeTitel h2 {
+  letter-spacing: 1px;
   font-size: 30px;
   color: white;
 }
@@ -165,6 +166,16 @@ article {
   width: 40%;
   height: 70%;
   border-radius: 1.5vw;
+}
+
+.afbeeldingSection1:hover,
+.afbeeldingSection2:hover {
+  transform: scale(1.02);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .infoTekstSection1,

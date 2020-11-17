@@ -157,14 +157,26 @@ article {
 .wrapper {
   display: grid;
   grid-template-columns: repeat(var(--hoeveelheid-columns-per-grid), 1fr);
+
+  /*Hoeveel rijen onder elkaar +  breedte van een kolom*/
   grid-template-rows: repeat(2, 8vw);
   color: white;
 }
 
 .film {
   border: 2px solid red;
-  margin: 0 var(--column-spacing2) var(--column-spacing-bottom)
-    var(--column-spacing2);
+
+  /*Margin tussen de kolommen*/
+  margin: 0 var(--column-spacing2) var(--column-spacing-bottom) var(--column-spacing2);
+}
+
+.film:hover {
+  transform: scale(1.03);
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 /*===================================Footer=========================================*/
