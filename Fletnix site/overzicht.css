@@ -1,0 +1,236 @@
+/*Niet verwijderen*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*Deze column spacing kan je overal gebruiken*/
+:root {
+  --column-spacing1: 3vw;
+  --column-spacing2: 7px;
+  --column-spacing-bottom: 10px;
+
+  --hoeveelheid-columns-per-grid: 6;
+}
+
+header {
+  width: 100%;
+  height: 4vw;
+  position: fixed;
+
+  background-color: black;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 1);
+}
+
+.logo {
+  /*Breedte van het vak waar de titel / logo in staat*/
+  width: 200px;
+
+  /*Tekst opmaak*/
+  color: #4fa5fc;
+  font-style: italic;
+}
+
+.logo h1 {
+  /*Positie*/
+  margin: 0 !important;
+  padding-top: 4%;
+  padding-left: 6vw;
+
+  font-size: 45px;
+}
+
+nav {
+  /*Zet het menu rechts in de header*/
+  float: right;
+
+  /*Verdere positionering*/
+  margin-top: 1%;
+  margin-right: 10vw;
+}
+
+nav a {
+  /*Haalt de normale opmaak van een link eraf*/
+  text-decoration: none;
+
+  /*Positie tussen de links*/
+
+  margin-right: var(--column-spacing1);
+
+  /*Link opmaak*/
+  color: #9c9c9c;
+
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #2e96ff;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 11px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.Inloggen {
+  background-color: #4fa5fc;
+  margin-left: 5vw;
+  font-weight: 500;
+}
+
+.Inloggen:hover {
+  background-color: #1c8dff;
+  transform: scale(1.04);
+}
+
+section {
+  height: 300px;
+}
+
+.bannerOverlay {
+  width: inherit;
+  height: inherit;
+  z-index: 999;
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 23%,
+    rgba(0, 0, 0, 0.4514180672268907) 57%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  backdrop-filter: blur(3px);
+}
+
+.Banner {
+  height: 300px !important;
+  width: 100% !important;
+  position: absolute;
+  z-index: -1;
+
+  background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+  background-size: inherit;
+  background-repeat: repeat;
+}
+
+.pakkendeTitel {
+  padding-top: 6vw;
+  text-align: center;
+}
+
+.pakkendeTitel h2 {
+  font-size: 30px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+/*==================================Overzicht=================================*/
+article {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.categorie {
+  height: auto;
+  width: auto;
+  margin-left: var(--column-spacing1);
+  margin-right: var(--column-spacing1);
+}
+
+.categorie h2 {
+  /*Disabled margin top die automatisch op een h2 staat*/
+  margin-top: 0 !important;
+
+  margin-left: var(--column-spacing2);
+  color: white;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(var(--hoeveelheid-columns-per-grid), 1fr);
+  grid-template-rows: repeat(2, 8vw);
+  color: white;
+}
+
+.film {
+  border: 2px solid red;
+  margin: 0 var(--column-spacing2) var(--column-spacing-bottom)
+    var(--column-spacing2);
+}
+
+/*===================================Footer=========================================*/
+
+footer {
+  background-color: black;
+  width: 100%;
+}
+
+footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-top: 2%;
+}
+
+/*Laat de columns allemaal ever ver uit elkaar staan*/
+footer .row .column {
+  margin-left: var(--column-spacing1);
+  margin-right: var(--column-spacing1);
+  padding-bottom: 4%;
+}
+
+/*Geeft de titel van de footers een witte lijn */
+footer .row .column h2 {
+  font-size: 24px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #c9c9c9;
+  font-weight: 100;
+  border-bottom: 1px solid #6b6b6b;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+footer .row .column ul {
+  list-style-type: none;
+}
+
+footer .row .column li {
+  color: #adadad;
+  text-decoration: none !important;
+}
+
+footer .row .column .links a {
+  color: #adadad;
+  text-decoration: none;
+}
+
+footer .row .column .links a:hover {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  border-top: 1px solid #1f1f1f;
+  width: 100%;
+  height: 2vw;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #1f1f1f;
+  background-color: black;
+}
+
+.copyright h2 {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
