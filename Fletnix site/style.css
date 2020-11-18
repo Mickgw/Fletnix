@@ -102,7 +102,6 @@ article {
   height: inherit;
   z-index: 999;
   position: absolute;
-  backdrop-filter: 2px;
 }
 
 .achtergrondImage {
@@ -112,7 +111,7 @@ article {
   height: inherit;
   background-image: url("Afbeeldingen/Content_achtergrond.jpg");
   background-size: inherit;
-  background-repeat: repeat;
+  filter: blur(2px);
 }
 
 .pakkendeTitel {
