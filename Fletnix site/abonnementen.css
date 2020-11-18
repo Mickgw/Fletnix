@@ -276,22 +276,28 @@
   .Abonnement1{
       margin-top:0;
       font-size: 20px;
-      color: grey;
+      color: rgb(255, 255, 255);
       background-color: black;
       text-align: center;
   }
   .Abonnement2{
     margin-top:0;
     font-size: 20px;
-    color: grey;
+    color: rgb(255, 255, 255);
     background-color: black;
     text-align: center;
 }
 .Abonnement3{
     margin-top:0;
     font-size: 20px;
-    color: grey;
+    color: rgb(255, 255, 255);
     background-color: black;
+    text-align: center;
+}
+.prijs{
+    margin-top:0;
+    font-size:30px;
+    color:#1c8dff;
     text-align: center;
 }
   
