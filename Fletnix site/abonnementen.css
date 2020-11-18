@@ -89,7 +89,11 @@ nav a:hover {
   background-color: #1c8dff;
   transform: scale(1.04);
 }
-
+.Selecteren{
+    background-color: rgb(79, 165, 252);
+    margin-left: 20vw;
+    font-weight: 100;
+}
 section {
   height: 300px;
 }
@@ -205,5 +209,16 @@ footer .row .column .links a:hover {
   font-size: 17px;
   font-weight: 700;
 }
-
-
+.prijs {
+    margin-top: 0px;
+    font-size: 30px;
+    color: rgb(28, 141, 255);
+    text-align: center;
+}
+.Abonnement {
+    margin-top: 0px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+}
