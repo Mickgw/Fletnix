@@ -29,6 +29,23 @@
     color: #4fa5fc;
     font-style: italic;
   }
+  .achtergrondOverlay {
+    width: inherit;
+    height: inherit;
+    z-index: 999;
+    position: absolute;
+    backdrop-filter: 2px;
+  }
+  
+  .achtergrondImage {
+    position: absolute;
+    z-index: -1;
+    width: inherit;
+    height: inherit;
+    background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+    background-size: inherit;
+    background-repeat: repeat;
+  }
   
   .logo h1 {
     /*Positie*/
@@ -89,7 +106,17 @@
     background-color: #1c8dff;
     transform: scale(1.04);
   }
-  
+  .Selecteren{
+      background-color: #4fa5fc;
+      margin-left:20vw;
+      font-weight:100;
+  }
+  .Selecteren:hover{
+    background-color:#1c8dff;
+    transform:scale(1.04);
+
+  }
+ 
   section {
     height: 300px;
   }
@@ -246,4 +273,25 @@
     font-size: 17px;
     font-weight: 700;
   }
+  .Abonnement1{
+      margin-top:0;
+      font-size: 20px;
+      color: grey;
+      background-color: black;
+      text-align: center;
+  }
+  .Abonnement2{
+    margin-top:0;
+    font-size: 20px;
+    color: grey;
+    background-color: black;
+    text-align: center;
+}
+.Abonnement3{
+    margin-top:0;
+    font-size: 20px;
+    color: grey;
+    background-color: black;
+    text-align: center;
+}
   
