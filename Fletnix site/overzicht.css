@@ -5,7 +5,7 @@
 
 /*Deze column spacing kan je overal gebruiken*/
 :root {
-  --column-spacing1: 3vw;
+  --column-spacing-footer: 3vw;
   --column-spacing2: 7px;
   --column-spacing-bottom: 10px;
 
@@ -55,7 +55,7 @@ nav a {
 
   /*Positie tussen de links*/
 
-  margin-right: var(--column-spacing1);
+  margin-right: var(--column-spacing-footer);
 
   /*Link opmaak*/
   color: #9c9c9c;
@@ -141,8 +141,8 @@ article {
 .categorie {
   height: auto;
   width: auto;
-  margin-left: var(--column-spacing1);
-  margin-right: var(--column-spacing1);
+  margin-left: var(--column-spacing-footer);
+  margin-right: var(--column-spacing-footer);
 }
 
 #playButton {
@@ -202,8 +202,8 @@ footer .row {
 
 /*Laat de columns allemaal ever ver uit elkaar staan*/
 footer .row .column {
-  margin-left: var(--column-spacing1);
-  margin-right: var(--column-spacing1);
+  margin-left: var(--column-spacing-footer);
+  margin-right: var(--column-spacing-footer);
   padding-bottom: 4%;
 }
 
