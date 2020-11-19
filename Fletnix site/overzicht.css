@@ -6,60 +6,55 @@
 /*Deze column spacing kan je overal gebruiken*/
 :root {
   --column-spacing-footer: 3vw;
-  --column-spacing2: 7px;
+  --column-spacing2: 3vw;
   --column-spacing-bottom: 10px;
 
   --hoeveelheid-columns-per-grid: 6;
+  --column-spacing-grid: 7px;
 }
 
-header {
-  width: 100%;
-  height: 4vw;
-  position: fixed;
-  z-index: 100000;
-  
-  background-color: black;
-  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 1);
-}
+/*========================Gehele navigation bar [begin]========================*/
 
-.logo {
-  /*Breedte van het vak waar de titel / logo in staat*/
-  width: 200px;
-
-  /*Tekst opmaak*/
+label.logo {
+  display: inline-block;
   color: #4fa5fc;
   font-style: italic;
-}
-
-.logo h1 {
-  /*Positie*/
-  margin: 0 !important;
-  padding-top: 4%;
+  padding-top: 9px;
   padding-left: 6vw;
 
   font-size: 45px;
+  font-weight: bold;
 }
 
 nav {
-  /*Zet het menu rechts in de header*/
-  float: right;
-
-  /*Verdere positionering*/
-  margin-top: 1%;
-  margin-right: 10vw;
+  width: 100%;
+  height: 8%;
+  background-color: black;
+  position: fixed;
+  z-index: 100000;
+  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 1);
 }
 
-nav a {
+nav ul {
+  margin-top: 22px;
+  float: right;
+  margin-right: 10%;
+}
+
+nav ul li {
+  /*Zet ze naast elkaar ipv onder elkaar*/
+  display: inline-block;
+
+  /*Verdere positionering*/
+  margin-right: var(--column-spacing2);
+}
+
+nav ul li a {
   /*Haalt de normale opmaak van een link eraf*/
   text-decoration: none;
 
-  /*Positie tussen de links*/
-
-  margin-right: var(--column-spacing-footer);
-
   /*Link opmaak*/
   color: #9c9c9c;
-
   font-weight: bold;
   font-size: 18px;
 }
@@ -68,6 +63,65 @@ nav a:hover {
   color: #2e96ff;
 }
 
+.fa-bars {
+  color: white;
+}
+
+.checkbtn {
+  font-size: 25px;
+  float: right;
+  margin-top: 2%;
+  margin-right: 2%;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/*========================Responsive[begin]========================*/
+@media (max-width: 1050px) {
+  .checkbtn {
+    display: block;
+  }
+
+  nav ul {
+    margin-top: 0px;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    right: -150%;
+    text-align: left;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .Inloggen {
+    margin-bottom: 30px;
+  }
+
+  nav ul li a {
+    font-size: 17px;
+    padding-left: 6vw;
+  }
+
+  /*Activeert de responsive nav en laat deze van rechts uitschuiven*/
+  #check:checked ~ ul {
+    right: 0;
+    margin-right: 0px;
+  }
+}
+/*========================Responsive[einde]========================*/
+/*========================NavigationBar[einde]========================*/
+
+/*Main button specificaties*/
 .button {
   border: none;
   color: white;
@@ -75,14 +129,15 @@ nav a:hover {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 8px;
 }
 
 .Inloggen {
   background-color: #4fa5fc;
-  margin-left: 5vw;
+  
+  /*Ruimte tussen het menu en de button*/
+  margin-left: 6vw;
   font-weight: 500;
 }
 
@@ -173,7 +228,7 @@ article {
   border: 2px solid red;
 
   /*Margin tussen de kolommen*/
-  margin: 0 var(--column-spacing2) var(--column-spacing-bottom) var(--column-spacing2);
+  margin: 0 var(--column-spacing-grid) var(--column-spacing-bottom) var(--column-spacing-grid);
 }
 
 .film:hover {

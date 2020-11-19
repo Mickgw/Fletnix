@@ -9,6 +9,10 @@
       type="text/css"
       href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css"
     />
+
+    <!--Hamburger menu icon-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
     <link rel="stylesheet" href="style.css" />
 
     <!--FONT-->
@@ -22,21 +26,24 @@
   <body>
     <header>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="overzicht.html">Film overzicht</a>
-        <a href="overOns.html">Over ons</a>
-        <a href="abonnementen.html">Abonnementen</a>
-        
-        <!--Inlog knop-->
-        <a href="loginPaginaLink">
-          <button class="button Inloggen">Inloggen</button>
-        </a>
-      </nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
 
-      <!--Logo-->
-      <div class="logo">
-        <h1>Fletnix</h1>
-      </div>
+        <label class="logo">Fletnix</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="overzicht.html">Film overzicht</a></li>
+          <li><a href="overOns.html">Over ons</a></li>
+          <li><a href="abonnementen.html">Abonnementen</a></li>
+
+          <!--Inlog knop-->
+          <a href="loginPaginaLink">
+            <button class="button Inloggen">Inloggen</button>
+          </a>
+        </ul>       
+      </nav>
     </header>
 
     <article>
