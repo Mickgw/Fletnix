@@ -17,8 +17,6 @@
   .backgroundImage{
     background-image: url("Afbeeldingen/Content_achtergrond.jpg");
     background-size: inherit;
-    filter: blur(2px);
-
   }
   label.logo {
     display: inline-block;
