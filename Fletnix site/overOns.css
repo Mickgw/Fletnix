@@ -298,9 +298,15 @@
       text-align: center;
   }
   /*==============timeline[Begin]=============*/
-  .timeline1{
-      background-size: inherit;
-      background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+  .background{
+    position: relative;
+    z-index: -1;
+    width: relative;
+    height: relative;
+    background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+    background-size: relative;
+
+  }
   }
   .timeline{
     position:relative;
