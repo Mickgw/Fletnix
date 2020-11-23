@@ -249,7 +249,7 @@
     z-index: 1;
   }
   .container:hover {
-      background-color: rgb(93, 104, 255)
+      background-color: #4fa5fc;
   }
   .left {
     left: 0;
