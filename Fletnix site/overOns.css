@@ -5,31 +5,16 @@
   
   /*Deze column spacing kan je overal gebruiken*/
   :root {
-    --column-spacing1: 3vw;
+    --column-spacing-footer: 3vw;
     --column-spacing2: 3vw;
     --column-spacing-bottom: 10px;
   
     --hoeveelheid-columns-per-grid: 6;
+    --column-spacing-grid: 7px;
   }
   
   /*========================Gehele navigation bar [begin]========================*/
   
-  .achtergrondOverlay {
-    width: inherit;
-    height: inherit;
-    z-index: 999;
-    position: absolute;
-  }
-  
-  .achtergrondImage {
-    position: absolute;
-    z-index: -1;
-    width: inherit;
-    height: inherit;
-    background-image: url("Afbeeldingen/Content_achtergrond.jpg");
-    background-size: inherit;
-    filter: blur(2px);
-  }
   label.logo {
     display: inline-block;
     color: #4fa5fc;
@@ -161,15 +146,6 @@
     transform: scale(1.04);
   }
   
-  .Selecteren{
-      background-color: rgb(79, 165, 252);
-      margin-left: 20vw;
-      font-weight: 100;
-  }
-  .Selecteren:hover{
-      background-color :#1c8dff;
-      transform: scale(1.04);
-  }
   section {
     height: 300px;
   }
@@ -188,6 +164,17 @@
     backdrop-filter: blur(3px);
   }
   
+  .Banner {
+    height: 300px !important;
+    width: 100% !important;
+    position: absolute;
+    z-index: -1;
+  
+    background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+    background-size: inherit;
+    background-repeat: repeat;
+  }
+  
   .pakkendeTitel {
     padding-top: 6vw;
     text-align: center;
@@ -199,12 +186,109 @@
     letter-spacing: 2px;
   }
   
+  /*==================================Overzicht=================================*/
+  article {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .categorie {
+    height: auto;
+    width: auto;
+    margin-left: var(--column-spacing-footer);
+    margin-right: var(--column-spacing-footer);
+  }
+  
+  #playButton {
+    border: none;
+    background-color: black;
+  }
+  
+  .categorie h2 {
+    /*Disabled margin top die automatisch op een h2 staat*/
+    margin-top: 0 !important;
+  
+    margin-left: var(--column-spacing2);
+    color: white;
+    letter-spacing: 1px;
+    padding-top: 10px;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(var(--hoeveelheid-columns-per-grid), 1fr);
+  
+    /*Hoeveel rijen onder elkaar +  breedte van een kolom*/
+    grid-template-rows: repeat(2, 8vw);
+    color: white;
+  }
+  
+  .film {
+    border: 2px solid red;
+  
+    /*Margin tussen de kolommen*/
+    margin: 0 var(--column-spacing-grid) var(--column-spacing-bottom) var(--column-spacing-grid);
+  }
+  
+  .film:hover {
+    transform: scale(1.03);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
   
   /*===================================Footer=========================================*/
   
   footer {
     background-color: black;
     width: 100%;
+  }
+  
+  footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 2%;
+  }
+  
+  /*Laat de columns allemaal ever ver uit elkaar staan*/
+  footer .row .column {
+    margin-left: var(--column-spacing-footer);
+    margin-right: var(--column-spacing-footer);
+    padding-bottom: 4%;
+  }
+  
+  /*Geeft de titel van de footers een witte lijn */
+  footer .row .column h2 {
+    font-size: 24px;
+    font-family: "Red Hat Display", sans-serif;
+    color: #c9c9c9;
+    font-weight: 100;
+    border-bottom: 1px solid #6b6b6b;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  
+  footer .row .column ul {
+    list-style-type: none;
+  }
+  
+  footer .row .column li {
+    color: #adadad;
+    text-decoration: none !important;
+  }
+  
+  footer .row .column .links a {
+    color: #adadad;
+    text-decoration: none;
+  }
+  
+  footer .row .column .links a:hover {
+    color: rgba(255, 255, 255, 0.2);
   }
   
   .copyright {
@@ -223,120 +307,118 @@
     font-size: 17px;
     font-weight: 700;
   }
-  
-
-/*==============timeline[Begin]=============*/
+  /*==============timeline[Begin]=============*/
   .timeline{
-      position:relative;
-      max-width:1200px;
-      margin: 0 auto;
-    }
-  
-    .timeline::after {
-    content: '';
-    position: relative;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    margin-left: 0;
-    }
-  
-    .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-    }
-  
-    .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: #4fa5fc;
-    border: 10px solid black;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
+    position:relative;
+    max-width:1200px;
+    margin: 0 auto;
   }
-  .container:hover {
-      background-color: #4fa5fc;
-  }
-  .left {
-    left: 0;
-    }
-  
-  .right{
-    left: 0;
-     }
-  
-     .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-    }
-  
-    .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-    }
-  
-  .right::after {
-    left: -16px;
-    }
-  
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    }
- 
-  @media screen and (max-width: 600px) {
-    .timeline::after {
-    left: 31px;
-    }
-    }
-  
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    }
 
-    .container::before {
-    left: 60px;
-     border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-    }
+  .timeline::after {
+  content: '';
+  position: relative;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 0;
+  }
+
+  .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  }
+
+  .container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #4fa5fc;
+  border: 10px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.container:hover {
+    background-color: #4fa5fc;
+}
+.left {
+  left: 0;
+  }
+
+.right{
+  left: 0;
+   }
+
+   .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  }
+
+  .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+.right::after {
+  left: -16px;
+  }
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  }
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  }
+
+.container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  .container::before {
+  left: 60px;
+   border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
 
 .left::after, .right::after {
-    left: 15px;
-    }
+  left: 15px;
+  }
 
- .timeline1{
-    margin-top: 0 auto;
-    margin-left: 5vw;
-    padding-top: 5%;
-    }
+.timeline1{
+  margin-top: 0 auto;
+  margin-left: 5vw;
+  padding-top: 5%;
+  }
 /*========timeline[eind]=========*/
   
