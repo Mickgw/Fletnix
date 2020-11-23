@@ -284,6 +284,7 @@ footer .row .column .links a:hover {
 }
 .Abonnement:hover{
     border-color: rgb(28, 141, 255);
+    border-width: 5px;
 }
 
 .Abonnement h2,.Abonnement2 h2,.Abonnement3 h2{
