@@ -13,7 +13,9 @@
   }
   
   /*========================Gehele navigation bar [begin]========================*/
-  
+  body {
+      background-color: black;
+  }
   label.logo {
     display: inline-block;
     color: #4fa5fc;
@@ -218,13 +220,13 @@
   
     .timeline::after {
     content: '';
-    position: absolute;
+    position: relative;
     width: 6px;
     background-color: white;
     top: 0;
     bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+    left: 0;
+    margin-left: 0;
     }
   
     .container {
@@ -246,13 +248,15 @@
     border-radius: 50%;
     z-index: 1;
   }
-  
+  .container:hover {
+      background-color: rgb(93, 104, 255)
+  }
   .left {
     left: 0;
     }
   
   .right{
-    left: 50%;
+    left: 0;
      }
   
      .left::before {
@@ -317,6 +321,7 @@
 
  .timeline1{
     margin-top: 0 auto;
+    margin-left: 5vw;
     padding-top: 5%;
     }
 /*========timeline[eind]=========*/
