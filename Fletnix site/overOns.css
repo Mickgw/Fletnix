@@ -151,7 +151,7 @@
       font-weight: 100;
   }
   .Selecteren:hover{
-      background-color :#1c8dff;
+      background-color :  #1c8dff;
       transform: scale(1.04);
   }
   section {
@@ -172,6 +172,17 @@
     backdrop-filter: blur(3px);
   }
   
+  .Banner {
+    height: 300px !important;
+    width: 100% !important;
+    position: absolute;
+    z-index: -1;
+  
+    background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+    background-size: inherit;
+    background-repeat: repeat;
+  }
+  
   .pakkendeTitel {
     padding-top: 6vw;
     text-align: center;
@@ -183,12 +194,63 @@
     letter-spacing: 2px;
   }
   
+  /*==================================Overzicht=================================*/
+  article {
+    width: 100%;
+    height: 100%;
+    background-color:#4fa5fc;
+    padding-top: 0%;
+  }
   
   /*===================================Footer=========================================*/
   
   footer {
     background-color: black;
     width: 100%;
+  }
+  
+  footer .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 2%;
+  }
+  
+  /*Laat de columns allemaal ever ver uit elkaar staan*/
+  footer .row .column {
+    margin-left: var(--column-spacing1);
+    margin-right: var(--column-spacing1);
+    padding-bottom: 4%;
+  }
+  
+  /*Geeft de titel van de footers een witte lijn */
+  footer .row .column h2 {
+    font-size: 24px;
+    font-family: "Red Hat Display", sans-serif;
+    color: #c9c9c9;
+    font-weight: 100;
+    border-bottom: 1px solid #6b6b6b;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  
+  footer .row .column ul {
+    list-style-type: none;
+  }
+  
+  footer .row .column li {
+    color: #adadad;
+    text-decoration: none !important;
+  }
+  
+  footer .row .column .links a {
+    color: #adadad;
+    text-decoration: none;
+  }
+  
+  footer .row .column .links a:hover {
+    color: rgba(255, 255, 255, 0.2);
   }
   
   .copyright {
@@ -207,117 +269,156 @@
     font-size: 17px;
     font-weight: 700;
   }
-  
-
-/*==============timeline[Begin]=============*/
-  .timeline{
-      position:relative;
-      max-width:1200px;
-      margin: 0 auto;
-    }
-  
-    .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-    }
-  
-    .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-    }
-  
-    .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: rgb(17, 0, 255);
-    border: 10px solid black;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
+  .prijs {
+      margin-top: 0px;
+      font-size: 30px;
+      color: #4fa5fc;
+      text-align: center;
+  }
+  .Abonnement {
+      padding-top: 10%;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      background-color: black;
+      text-align: center;
   }
   
-  .left {
-    left: 0;
-    }
+  .Abonnement h2,.Abonnement2 h2,.Abonnement3 h2{
+      font-size: 35px;
+      color:  rgb(28, 141, 255);
+      text-align: center;
   
-  .right{
-    left: 50%;
-     }
-  
-     .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-    }
-  
-    .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-    }
-  
-  .right::after {
-    left: -16px;
-    }
-  
-  .content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    }
- 
-  @media screen and (max-width: 600px) {
-    .timeline::after {
-    left: 31px;
-    }
-    }
-  
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-    }
+  }
+  .Abonnement2, .Abonnement3{
+      margin-top:5%;
+      padding-top: 10%;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      background-color: black;
+      text-align: center;
+  }
+  /*==============timeline[Begin]=============*/
+.timelinesection{
+    padding-top:10%;
+}
+body{
+    background-color:black;
+}
+  .timeline{
+    position:relative;
+    max-width:1200px;
+    margin: 0 auto;
+  }
 
-    .container::before {
-    left: 60px;
-     border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-    }
+  .timeline::after {
+  content: '';
+  position: relative;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-left: 0;
+  }
+
+  .container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  }
+
+  .container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #4fa5fc;
+  border: 10px solid black;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.container:hover {
+    transform: scale(1.04);
+    background-color: #4fa5fc;
+    border: 10px solid white;
+}
+.left {
+  left: 0;
+  }
+
+.right{
+  left: 0;
+   }
+
+   .left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  }
+
+  .right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+.right::after {
+  left: -16px;
+  }
+
+.containercontent {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+  }
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+  left: 31px;
+  }
+  }
+
+.container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+
+  .container::before {
+  left: 60px;
+   border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
 
 .left::after, .right::after {
-    left: 15px;
-    }
+  left: 15px;
+  }
 
- .timeline1{
-    margin-top: 0 auto;
-    padding-top: 5%;
-    }
+.timeline1{
+  margin-top: 0 auto;
+  margin-left: 5vw;
+  padding-top: 5%;
+  }
 /*========timeline[eind]=========*/
+  
+  
   
