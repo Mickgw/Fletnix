@@ -211,7 +211,7 @@
 
 /*==============timeline[Begin]=============*/
   .timeline{
-      position:relative left;
+      position:relative;
       max-width:1200px;
       margin: 0 auto;
     }
@@ -314,7 +314,7 @@
 .left::after, .right::after {
     left: 15px;
     }
-    
+
  .timeline1{
     margin-top: 0 auto;
     padding-top: 5%;
