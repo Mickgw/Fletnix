@@ -298,6 +298,10 @@
       text-align: center;
   }
   /*==============timeline[Begin]=============*/
+  .timeline1{
+      background-size: inherit;
+      background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+  }
   .timeline{
     position:relative;
     max-width:1200px;
