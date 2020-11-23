@@ -1,0 +1,79 @@
+.info {
+  /*Positie*/
+  margin-right: auto;
+  margin-left: auto;
+
+  /*Grootte section1*/
+  width: 65vw;
+  height: 30vw;
+
+  background-color: transparent;
+  border-radius: 25px;
+}
+
+.section1,
+.section2 {
+  /*Positie*/
+  margin-left: 8%;
+
+  /*Grootte section1*/
+  width: 90%;
+  height: 50%;
+
+  background-color: blue;
+}
+
+.afbeeldingSection1,
+.afbeeldingSection2 {
+  /*Positie*/
+  float: left;
+  margin-top: 4%;
+  margin-left: 4%;
+
+  /*afbeelding*/
+  background-image: url(Afbeeldingen/abonnement.png);
+  background-size: cover;
+
+  /*afmeting afbeelding*/
+  width: 40%;
+  height: 70%;
+  border-radius: 1.5vw;
+}
+
+.afbeeldingSection1:hover,
+.afbeeldingSection2:hover {
+  transform: scale(1.02);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+
+.infoTekstSection1,
+.infoTekstSection2 {
+  /*Positie*/
+  float: right;
+  margin-top: 4%;
+  margin-right: 10%;
+
+  /*Grootte tekststukje*/
+  width: 40%;
+}
+.infoTekstSection1 h2,
+.infoTekstSection2 h2 {
+  color: white;
+  margin: 0 !important;
+}
+
+.infoTekstSection1 p,
+.infoTekstSection2 p {
+  /*Zet de tekst iets onder de H2*/
+  padding-top: 14px;
+  margin: 0 !important;
+
+  font-size: 1.03em;
+  font-weight: 500;
+  word-spacing: 5px;
+  color: white;
+}
