@@ -336,7 +336,7 @@
     left: 0;
   }
   .right{
-      right: 0;
+    left: 50%;
   }
   .left::before {
     content: " ";
@@ -395,6 +395,6 @@ left: 15px;
  }
 .timeline1{
     margin-top: 0 auto;
-    padding-top:10%
+    padding-top: 5%;
 }
   
