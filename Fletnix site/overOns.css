@@ -13,11 +13,13 @@
   }
   
   /*========================Gehele navigation bar [begin]========================*/
-  body {
+  
+  .backgroundimage{
     background-color: black;
-        background-image: url("Afbeeldingen/Content_achtergrond.jpg");
-        background-size: inherit;
-        filter: blur(2px);
+    background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+    background-size: inherit;
+    filter: blur(2px);
+
   }
   label.logo {
     display: inline-block;
