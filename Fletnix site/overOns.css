@@ -298,7 +298,12 @@
       text-align: center;
   }
   /*==============timeline[Begin]=============*/
-  }
+.timelinesection{
+    padding-top:10%;
+}
+body{
+    background-color:black;
+}
   .timeline{
     position:relative;
     max-width:1200px;
@@ -336,7 +341,9 @@
   z-index: 1;
 }
 .container:hover {
+    transform: scale(1.04);
     background-color: #4fa5fc;
+    border: 10px solid white;
 }
 .left {
   left: 0;
