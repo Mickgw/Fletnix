@@ -9,7 +9,7 @@
   --column-spacing2: 3vw;
   --column-spacing-bottom: 10px;
 
-  --hoeveelheid-columns-per-grid: 6;
+  --hoeveelheid-columns-per-grid: 7;
   --column-spacing-grid: 7px;
 }
 
@@ -26,12 +26,18 @@ label.logo {
   font-weight: bold;
 }
 
+@media screen and (max-width: 600px) {
+  label.logo {
+    font-size: 36px;
+  }
+}
+
 nav {
   width: 100%;
   height: 8%;
   background-color: black;
   position: fixed;
-  z-index: 100000;
+  z-index: 9;
   box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 1);
 }
 
@@ -135,7 +141,7 @@ nav a:hover {
 
 .Inloggen {
   background-color: #4fa5fc;
-  
+
   /*Ruimte tussen het menu en de button*/
   margin-left: 6vw;
   font-weight: 500;
@@ -209,7 +215,7 @@ article {
   /*Disabled margin top die automatisch op een h2 staat*/
   margin-top: 0 !important;
 
-  margin-left: var(--column-spacing2);
+  margin-left: 0.5%;
   color: white;
   letter-spacing: 1px;
   padding-top: 10px;
@@ -217,18 +223,22 @@ article {
 
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(var(--hoeveelheid-columns-per-grid), 1fr);
+  grid-template-columns: repeat(var(--hoeveelheid-columns-per-grid), 13vw);
 
   /*Hoeveel rijen onder elkaar +  breedte van een kolom*/
-  grid-template-rows: repeat(2, 8vw);
+  grid-template-rows: repeat(2, 19vw);
   color: white;
 }
 
 .film {
-  border: 2px solid #4fa5fc;
+  /* border: 2px solid #4fa5fc; */
+  background-image: url("Afbeeldingen/TENET.jpg");
+  background-size: cover;
+  height: 95%;
 
   /*Margin tussen de kolommen*/
-  margin: 0 var(--column-spacing-grid) var(--column-spacing-bottom) var(--column-spacing-grid);
+  margin: 0 var(--column-spacing-grid) var(--column-spacing-bottom)
+    var(--column-spacing-grid);
 }
 
 .film:hover {
@@ -238,9 +248,57 @@ article {
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
 }
 
-/*===================================Footer=========================================*/
+/*===================================Pop up=========================================*/
+
+.modal a {
+  text-decoration: none;
+}
+
+.modal {
+  background-color: blue;
+  width: 75%;
+  height: 75%;
+  position: absolute;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal__content {
+  width: 80%;
+  height: 60%;
+  position: absolute;
+  background-color: red;
+  border-radius: 1em;
+}
+
+#modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal:target .modal__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__close {
+  color: white;
+  font-size: 3em;
+  position: absolute;
+  top: 0.1em;
+  right: 0.5em;
+}
+
+
+
+
+
+/*= ==================================Footer=========================================*/
 
 footer {
   background-color: black;
