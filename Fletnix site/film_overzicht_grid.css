@@ -1,0 +1,144 @@
+/*==================================Overzicht=================================*/
+article {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .categorie {
+    height: auto;
+    width: auto;
+    margin-left: var(--column-spacing-footer);
+    margin-right: var(--column-spacing-footer);
+  }
+  
+  #playButton {
+    border: none;
+    background-color: black;
+  }
+  
+  .categorie h2 {
+    /*Disabled margin top die automatisch op een h2 staat*/
+    margin-top: 0 !important;
+  
+    margin-left: 1.5%;
+    color: white;
+    letter-spacing: 1px;
+    padding-top: 10px;
+  }
+  
+  .wrapper {
+    display: grid;
+    justify-content: center;
+  
+    /*Hoeveel rijen onder elkaar +  breedte van een kolom*/
+    grid-template-rows: repeat(
+      var(--hoeveelheid-rijen-per-grid-groot_scherm),
+      19vw
+    );
+  
+    /*Hoeveel columns per rij + hoogte van de afbeelding*/
+    grid-template-columns: repeat(
+      var(--hoeveelheid-columns-per-grid-groot_scherm),
+      13vw
+    );
+    color: white;
+  }
+  
+  /*Grid voor een kleinere laptop*/
+  @media screen and (max-width: 1500px) {
+    .wrapper {
+      grid-template-rows: repeat(
+        var(--hoeveelheid-rijen-per-grid-gemiddelde_laptop),
+        21vw
+      );
+    
+      /*Hoeveel columns per rij + hoogte van de afbeelding*/
+      grid-template-columns: repeat(
+        var(--hoeveelheid-columns-per-grid-gemiddelde_laptop),
+        15vw
+      );
+    }
+  }
+  
+  @media screen and (max-width: 1250px) {
+    .wrapper {
+      grid-template-rows: repeat(
+        var(--hoeveelheid-rijen-per-grid-kleinere_laptop),
+        25vw
+      );
+    
+      /*Hoeveel columns per rij + hoogte van de afbeelding*/
+      grid-template-columns: repeat(
+        var(--hoeveelheid-columns-per-grid-kleinere_laptop),
+        18vw
+      );
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .wrapper {
+      grid-template-rows: repeat(
+        var(--hoeveelheid-rijen-per-grid-ipad),
+        33vw
+      );
+    
+      /*Hoeveel columns per rij + hoogte van de afbeelding*/
+      grid-template-columns: repeat(
+        var(--hoeveelheid-columns-per-grid-ipad),
+        22vw
+      );
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .wrapper {
+      grid-template-rows: repeat(
+        var(--hoeveelheid-rijen-per-grid-tablet),
+        35vw
+      );
+    
+      /*Hoeveel columns per rij + hoogte van de afbeelding*/
+      grid-template-columns: repeat(
+        var(--hoeveelheid-columns-per-grid-tablet),
+        24vw
+      );
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wrapper {
+      grid-template-rows: repeat(
+        var(--hoeveelheid-rijen-per-grid-telefoon),
+        48vw
+      );
+    
+      /*Hoeveel columns per rij + hoogte van de afbeelding*/
+      grid-template-columns: repeat(
+        var(--hoeveelheid-columns-per-grid-telefoon),
+        34vw
+      );
+    }
+  }
+  
+  .film {
+    /* border: 2px solid #4fa5fc; */
+    background-image: url("Afbeeldingen/TENET.jpg");
+    background-size: cover;
+    height: 95%;
+  
+    /*Margin tussen de kolommen*/
+    margin: 0 var(--column-spacing-grid) var(--column-spacing-bottom)
+      var(--column-spacing-grid);
+  }
+  
+  .film:hover {
+    transform: scale(1.03);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  
+    cursor: pointer;
+  }
