@@ -4,13 +4,16 @@ body{
 .inlogFormulier{
 padding-top: 100px;
 padding-left: 100px;
+
 }
 .inlogVeld{
     border-radius: 20px;
     font-size: 20px;
-
+    background-color: rgb(79, 165, 252);
 }
 .inlogKnop{
     font-size: 20px;
+    border-radius: 20px;
+    
 
 }
