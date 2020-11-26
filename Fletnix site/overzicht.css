@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-/*Deze column spacing kan je overal gebruiken*/
+/*Deze variabelen kan je overal gebruiken*/
 :root {
   --column-spacing-footer: 3vw;
   --column-spacing2: 3vw;
@@ -26,6 +26,7 @@
   --column-spacing-grid: 7px;
 }
 
+/*===================================Banner [begin]=========================================*/
 section {
   height: 300px;
 }
@@ -55,19 +56,53 @@ section {
   background-repeat: repeat;
 }
 
+/*===================================Titel / tekst over  de banner heen [begin]=========================================*/
 .pakkendeTitel {
-  padding-top: 6vw;
+  padding-top: 6%;
   text-align: center;
 }
 
-.pakkendeTitel h2 {
-  font-size: 30px;
-  color: white;
-  letter-spacing: 2px;
+@media screen and (max-width: 1250px) {
+  .pakkendeTitel {
+    padding-top: 7%;
+  }
+
+  .pakkendeTitel h2 {
+    font-size: 26px;
+  }
 }
 
-/*===================================Pop up=========================================*/
+@media screen and (max-width: 900px) {
+  .pakkendeTitel {
+    padding-top: 12%;
+  }
 
+  /*Zet de titel heel iets verder onder de nav*/
+  .pakkendeTitel h2 {
+    font-size: 25px !important;
+  }
+}
+
+.pakkendeTitel h2 {
+  letter-spacing: 1px;
+  font-size: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 650px) {
+  .pakkendeTitel h2 {
+    font-size: 24px !important;
+  }
+
+  /*Zet de titel heel iets verder onder de nav*/
+  .pakkendeTitel {
+    padding-top: 17%;
+  }
+}
+/*===================================Titel / tekst over  de banner heen [begin]=========================================*/
+/*===================================Banner [einde]=========================================*/
+
+/*===================================Pop up [begin]=========================================*/
 .modal a {
   text-decoration: none;
 }
@@ -89,7 +124,7 @@ section {
 
 .modal_filmPagina {
   margin-left: 20%;
-  margin-top: 10%;
+  margin-top: 5%;
 
   width: 60%;
   height: 35vw;
@@ -100,6 +135,84 @@ section {
 
   color: white;
 }
+
+.filmPagina {
+  margin: 0.5% auto;
+  width: 98%;
+  height: 98%;
+  /* background-color: blue; */
+}
+
+.filmTitel {
+  padding-top: 2%;
+  padding-left: 10%;
+}
+.filmTitel h2 {
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin: 0 !important;
+}
+
+.filmTitel h2 span {
+  font-size: 25px;
+  color: #a6a6a6;
+}
+
+.filmTitel h3 {
+  font-weight: 100;
+  margin-bottom: 0 !important;
+}
+
+.filmPagina_Row {
+  width: 100%;
+  height: 100%;
+
+  padding-top: 2%;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  /* background-color: red; */
+}
+
+.filmPagina_column1, .filmPagina_column2 {
+  width: 40%;
+}
+
+.AfbeeldingFilm {
+  background-image: url("Afbeeldingen/TENET.jpg");
+  background-size: cover;
+  height: 25vw;
+}
+
+.filmPagina_column2 ul {
+  margin: 0 !important;
+}
+
+.filmPagina_column2 li {
+  list-style-type: none; 
+
+  font-size: 20px;
+}
+
+.filmPagina_column2 li span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-right: 1%;
+  color: #a6a6a6;
+}
+
+.filmPagina_column2 li p {
+  font-size: 17px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.filmPagina_column2 li a {
+  color: #4fa5fc;
+}
+
 
 #modal:target {
   opacity: 1;
@@ -123,4 +236,16 @@ section {
   color: red;
 }
 
+#playButton {
+  border-radius: 0.5em;
+  padding: 10px 40px;
+  border: none;
+  background-color: #4fa5fc;
+  outline: none;
+}
+
+#playButton:hover {
+  background-color: #1c8dff;
+  transform: scale(1.02);
+}
 
