@@ -1,12 +1,29 @@
-.inlogFormulier{
-padding-top: 100px;
-padding-left: 100px;
+* {
+    font-family: "Roboto", sans-serif;
+  }
+
+body{
+    background-color: black;
 }
-.inlogVeld{
-    font-size: 20px;
+.inlogFormulier{
+position: relative;
+padding-top: 20vw;
+padding-left: 50%;
+
 
 }
-.inlogKnop{
+.inlogVeld{
+    position: relative;
+    margin-left: -10vw;
+    box-sizing: relative;
+    border-radius: 12px;
     font-size: 20px;
+   
+}
+.inlogKnop{
+    position: relative;
+    font-size: 20px;
+    border-radius: 20px;
+  
 
 }

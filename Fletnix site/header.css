@@ -158,4 +158,16 @@ nav a:hover {
   background-color: #1c8dff;
   transform: scale(1.03);
 }
+
+.Uitloggen{
+  background-color: #4fa5fc;
+  margin-left: 6vw;
+  font-weight: 500;
+  outline: none;
+}
+
+.Uitloggen:hover{
+  background-color: #1c8dff;
+  transform: scale(1.03);
+}
 /*========================Header [einde]========================*/
