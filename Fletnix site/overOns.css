@@ -67,7 +67,9 @@
     background-color: black;
     font-family: Helvetica, sans-serif;
   }
-  
+  .timelinesection{
+    padding-top:10vw;
+  }
   /* The actual timeline (the vertical ruler) */
   .timeline {
     position: relative;
