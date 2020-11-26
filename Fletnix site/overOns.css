@@ -60,46 +60,11 @@
     color: white;
     letter-spacing: 2px;
   }
-  
-  /*==================================Overzicht=================================*/
-  article {
-    width: 100%;
-    height: 100%;
-    background-color:#4fa5fc;
-    padding-top: 0%;
-  }
-  
-  .prijs {
-      margin-top: 0px;
-      font-size: 30px;
-      color: #4fa5fc;
-      text-align: center;
-  }
-  .Abonnement {
-      padding-top: 10%;
-      font-size: 20px;
-      color: rgb(255, 255, 255);
-      background-color: black;
-      text-align: center;
-  }
-  
-  .Abonnement h2,.Abonnement2 h2,.Abonnement3 h2{
-      font-size: 35px;
-      color:  rgb(28, 141, 255);
-      text-align: center;
-  
-  }
-  .Abonnement2, .Abonnement3{
-      margin-top:5%;
-      padding-top: 10%;
-      font-size: 20px;
-      color: rgb(255, 255, 255);
-      background-color: black;
-      text-align: center;
-  }
+
   /*==============timeline[Begin]=============*/
 .timelinesection{
     padding-top:10%;
+    color: blue;
 }
 body{
     background-color:black;
@@ -186,7 +151,7 @@ body{
 
 .containercontent {
   padding: 20px 30px;
-  background-color: white;
+  background-color:  #4fa5fc;
   position: relative;
   border-radius: 6px;
   }
