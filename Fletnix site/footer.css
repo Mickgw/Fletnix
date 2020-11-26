@@ -2,73 +2,105 @@
 
 /*Deze column spacing kan je overal gebruiken*/
 :root {
-    --column-spacing1: 2vw;
-    --column-spacing2: 3vw;
-    --column-spacing-footer: 3vw;
-  }
+  --column-spacing1: 2vw;
+  --column-spacing2: 3vw;
+  --column-spacing-footer: 3vw;
+}
 
 footer {
-    background-color: black;
-    width: 100%;
+  background-color: black;
+  width: 100%;
+}
+
+footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  padding-top: 2%;
+}
+
+/*Laat de columns allemaal ever ver uit elkaar staan*/
+footer .row .column {
+  margin-left: var(--column-spacing-footer);
+  margin-right: var(--column-spacing-footer);
+  padding-bottom: 4%;
+}
+
+/*Geeft de titel van de footers een witte lijn */
+footer .row .column h2 {
+  font-size: 24px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #c9c9c9;
+  font-weight: 100;
+  border-bottom: 1px solid #6b6b6b;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+footer .row .column ul {
+  list-style-type: none;
+}
+
+footer .row .column li {
+  color: #adadad;
+  text-decoration: none !important;
+}
+
+footer .row .column .links a {
+  color: #adadad;
+  text-decoration: none;
+}
+
+footer .row .column .links a:hover {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+  border-top: 1px solid #1f1f1f;
+  width: 100%;
+  height: 2vw;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  color: #1f1f1f;
+  background-color: black;
+}
+
+.copyright h2 {
+  margin-top: 5px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/*===========================Responsive==============================*/
+/*Zorgt ervoor dat de column onder elkaar komen te staan als het venster te klein word (begin)*/
+@media (max-width: 1000px) {
+  footer .row,
+  footer .column {
+    display: block;
+    width: 95%;
+    text-align: left;
   }
-  
-  footer .row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: row;
-    padding-top: 2%;
+
+  footer .row .column i {
+    margin-left: 0;
   }
-  
-  /*Laat de columns allemaal ever ver uit elkaar staan*/
-  footer .row .column {
-    margin-left: var(--column-spacing-footer);
-    margin-right: var(--column-spacing-footer);
-    padding-bottom: 4%;
-  }
-  
-  /*Geeft de titel van de footers een witte lijn */
-  footer .row .column h2 {
-    font-size: 24px;
-    font-family: "Red Hat Display", sans-serif;
-    color: #c9c9c9;
-    font-weight: 100;
-    border-bottom: 1px solid #6b6b6b;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-  }
-  
-  footer .row .column ul {
-    list-style-type: none;
-  }
-  
-  footer .row .column li {
-    color: #adadad;
-    text-decoration: none !important;
-  }
-  
-  footer .row .column .links a {
-    color: #adadad;
-    text-decoration: none;
-  }
-  
-  footer .row .column .links a:hover {
-    color: rgba(255, 255, 255, 0.2);
-  }
-  
+
   .copyright {
-    border-top: 1px solid #1f1f1f;
-    width: 100%;
-    height: 2vw;
-    padding-top: 10px;
-    text-align: center;
-    font-size: 20px;
-    color: #1f1f1f;
-    background-color: black;
+    position: relative;
   }
-  
-  .copyright h2 {
-    margin-top: 5px;
-    font-size: 17px;
-    font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .column h2 {
+    font-size: 19px;
   }
+}
+
+@media screen and (max-width: 750px) {
+  footer .row,
+  footer .column {
+    width: 90%;
+  }
+}
