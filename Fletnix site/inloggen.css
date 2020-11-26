@@ -6,20 +6,24 @@ body{
     background-color: black;
 }
 .inlogFormulier{
-padding-top: 10vw;
+position: relative;
+padding-top: 20vw;
 padding-left: 50%;
 
 
 }
 .inlogVeld{
+    position: relative;
+    margin-left: -10vw;
     box-sizing: relative;
     border-radius: 12px;
     font-size: 20px;
-    background-color: rgb(79, 165, 252);
+   
 }
 .inlogKnop{
+    position: relative;
     font-size: 20px;
     border-radius: 20px;
-    
+  
 
 }
