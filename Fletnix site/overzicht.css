@@ -136,6 +136,16 @@ section {
   color: white;
 }
 
+#modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal:target .modal__content {
+  opacity: 1;
+  visibility: visible;
+}
+
 .filmPagina {
   margin: 0.5% auto;
   width: 98%;
@@ -212,16 +222,6 @@ section {
 
 .filmPagina_column2 li a {
   color: #4fa5fc;
-}
-
-#modal:target {
-  opacity: 1;
-  visibility: visible;
-}
-
-#modal:target .modal__content {
-  opacity: 1;
-  visibility: visible;
 }
 
 .modal_close {
