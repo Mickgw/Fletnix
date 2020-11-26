@@ -134,11 +134,12 @@ label.logo {
     background-color: #4fa5fc;
     margin-left: 6vw;
     font-weight: 500;
+    outline: none;
   }
   
   .Inloggen:hover {
     background-color: #1c8dff;
-    transform: scale(1.04);
+    transform: scale(1.03);
   }
   
   /*========================Header [einde]========================*/

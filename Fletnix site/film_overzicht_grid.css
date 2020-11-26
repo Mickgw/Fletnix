@@ -12,11 +12,6 @@ article {
     margin-right: var(--column-spacing-footer);
   }
   
-  #playButton {
-    border: none;
-    background-color: black;
-  }
-  
   .categorie h2 {
     /*Disabled margin top die automatisch op een h2 staat*/
     margin-top: 0 !important;
