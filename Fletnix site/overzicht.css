@@ -96,7 +96,7 @@ section {
 
   /*Zet de titel heel iets verder onder de nav*/
   .pakkendeTitel {
-    padding-top: 17%;
+    padding-top: 28%;
   }
 }
 /*===================================Titel / tekst over  de banner heen [begin]=========================================*/
@@ -176,7 +176,8 @@ section {
   /* background-color: red; */
 }
 
-.filmPagina_column1, .filmPagina_column2 {
+.filmPagina_column1,
+.filmPagina_column2 {
   width: 40%;
 }
 
@@ -191,7 +192,7 @@ section {
 }
 
 .filmPagina_column2 li {
-  list-style-type: none; 
+  list-style-type: none;
 
   font-size: 20px;
 }
@@ -212,7 +213,6 @@ section {
 .filmPagina_column2 li a {
   color: #4fa5fc;
 }
-
 
 #modal:target {
   opacity: 1;
@@ -249,3 +249,109 @@ section {
   transform: scale(1.02);
 }
 
+/*============================Responsiveheid modal [begin]============================*/
+
+@media screen and (max-width: 1850px) {
+  .filmPagina_column2 li span {
+    font-size: 18px;
+  }
+
+  .filmPagina_column2 li p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .filmPagina_column2 li span {
+    font-size: 16px;
+  }
+
+  .filmPagina_column2 li p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .modal_filmPagina {
+    margin-top: 8%;
+    height: 45vw;
+  }
+
+  .AfbeeldingFilm {
+    height: 30vw;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .modal_filmPagina {
+    margin-left: 10%;
+    height: 50vw;
+    width: 80%;
+  }
+
+  .AfbeeldingFilm {
+    height: 35vw;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .modal_filmPagina {
+    height: 65vw;
+  }
+
+  .AfbeeldingFilm {
+    height: 41vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .modal_filmPagina {
+    margin-top: 12%;
+    margin-left: 2% !important;
+    width: 96%;
+    height: 100vw;
+  }
+
+  .filmPagina_Row {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    height: auto;
+    width: auto;
+    padding-left: 10%;
+  }
+
+  .filmPagina_column2 {
+    width: 80%;
+  }
+
+  .filmPagina_column2 ul {
+    padding-left: 0 !important;
+  }
+
+  @media screen and (max-width: 750px) {
+    .modal_filmPagina {
+      margin-top: 22%;
+      height: 140vw;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .modal_filmPagina {
+      margin-top: 27%;
+      height: 220vw;
+    }
+
+    .filmTitel {
+      padding-top: 20%;
+    }
+
+    label.logo {
+      padding-top: 1px;
+    }
+  }
+}
