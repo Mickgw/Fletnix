@@ -1,8 +1,12 @@
+body{
+    background-color: black;
+}
 .inlogFormulier{
 padding-top: 100px;
 padding-left: 100px;
 }
 .inlogVeld{
+    border-radius: 20px;
     font-size: 20px;
 
 }
