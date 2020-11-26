@@ -6,14 +6,13 @@ body{
     background-color: black;
 }
 .inlogFormulier{
-padding-top: 100px;
-padding-left: 100px;
+padding-top: 10vw;
+padding-left: 50%
 
 }
 .inlogVeld{
     border-radius: 12px;
     font-size: 20px;
-    font-style: 
     background-color: rgb(79, 165, 252);
 }
 .inlogKnop{
