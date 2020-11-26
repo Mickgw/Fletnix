@@ -7,10 +7,12 @@ body{
 }
 .inlogFormulier{
 padding-top: 10vw;
-padding-left: 50%
+padding-left: 50%;
+
 
 }
 .inlogVeld{
+    box-sizing: relative;
     border-radius: 12px;
     font-size: 20px;
     background-color: rgb(79, 165, 252);
