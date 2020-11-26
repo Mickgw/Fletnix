@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css"
+    />
+
+    <!--Hamburger menu icon-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!--CSS files-->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="inloggen.css"/>
+
+
+    <!--FONT-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Login pagina</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+
+        <label class="logo">Fletnix</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="overzicht.html">Film overzicht</a></li>
+          <li><a href="overOns.html">Over ons</a></li>
+          <li><a href="abonnementen.html">Abonnementen</a></li>
+
+          <!--Inlog knop-->
+          <a href="loginPaginaLink">
+            <button class="button Inloggen">Inloggen</button>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <section class="inlogFormulier">
+        <div class = "inlogVeld">
+            <div class="inlogKnop">
+                <form>
+                    <label for="email">e-mail adress:</label><br>
+                    <input type ="text" id="email" name = "email" value ="Voorbeeld@voorbeeld.com"><br>
+                    <label for="password">wachtwoord:</label><br>
+                    <input type ="text" id="wachtwoord" name = "wachtwoord" value ="********"><br>
+                    <input type = "submit" value= "Login">
+                    <input type = "submit" value= "Registreer">
+                </form>
+            </div>
+        </div>
+
+    </section>
+  </body>
+</html>
