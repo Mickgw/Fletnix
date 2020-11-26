@@ -64,7 +64,7 @@
   /*==============timeline[Begin]=============*/
 .timelinesection{
     padding-top:10%;
-    color: blue;
+    color: white;
 }
 body{
     background-color:black;
@@ -107,7 +107,7 @@ body{
 }
 .container:hover {
     transform: scale(1.04);
-    background-color: #4fa5fc;
+    background-color:#1c8dff;
     border: 10px solid white;
     border-radius: 12px;
 }
@@ -151,7 +151,7 @@ body{
 
 .containercontent {
   padding: 20px 30px;
-  background-color:  #4fa5fc;
+  background-color:   #1c8dff;
   position: relative;
   border-radius: 6px;
   }
