@@ -1,3 +1,7 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+
 body{
     background-color: black;
 }
@@ -7,8 +11,9 @@ padding-left: 100px;
 
 }
 .inlogVeld{
-    border-radius: 20px;
+    border-radius: 12px;
     font-size: 20px;
+    font-style: 
     background-color: rgb(79, 165, 252);
 }
 .inlogKnop{
