@@ -40,6 +40,7 @@ footer .row .column h2 {
 
 footer .row .column ul {
   list-style-type: none;
+  padding: 0 !important;
 }
 
 footer .row .column li {
