@@ -11,6 +11,42 @@ article {
     margin-left: var(--column-spacing-footer);
     margin-right: var(--column-spacing-footer);
   }
+
+
+
+  .filtersGenre, .filtersRegiseur, .filtersJaar {
+    display: flex;
+    margin-left: 1.5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border: none;
+    color: white;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #4fa5fc;
+    
+    outline: none;
+  }
+
+  #searchBar {
+    display: flex;
+    margin-left: 1.5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    border: none;
+    color: black;
+    padding: 11px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+  }
   
   .categorie h2 {
     /*Disabled margin top die automatisch op een h2 staat*/

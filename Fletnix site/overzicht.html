@@ -73,13 +73,41 @@
             </div>
             <div class="filmPagina_column2">
               <ul>
-                <li><span>Filmlengte: </span><p>150 minuten</p></li>
-                <li><span>IMDB Score: </span><p>7.8/10</p></li>
-                <li><span>Acteurs: </span><p> John David Washington,  Robert Pattinson,  Elizabeth Debicki<br><a href="https://www.imdb.com/title/tt6723592/fullcredits/?ref_=tt_ov_st_sm"> zie gehele cast »</a></p></li>
-                <li><p>John David Washington is de Protagonist in Christopher Nolan’s nieuwe film, de actiethriller Tenet. Slechts gewapend met één woord – Tenet – moet de Protagonist de wereld zien te redden van de ondergang, reizend door een schemerwereld van internationale spionage op een missie die zich afspeelt buiten de bestaande tijd. Niet tijdreizen, maar Inversie.</p></li>
+                <li>
+                  <span>Filmlengte: </span>
+                  <p>150 minuten</p>
+                </li>
+                <li>
+                  <span>IMDB Score: </span>
+                  <p>7.8/10</p>
+                </li>
+                <li>
+                  <span>Acteurs: </span>
+                  <p>
+                    John David Washington, Robert Pattinson, Elizabeth
+                    Debicki<br /><a
+                      href="https://www.imdb.com/title/tt6723592/fullcredits/?ref_=tt_ov_st_sm"
+                    >
+                      zie gehele cast »</a
+                    >
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    John David Washington is de Protagonist in Christopher
+                    Nolan’s nieuwe film, de actiethriller Tenet. Slechts
+                    gewapend met één woord – Tenet – moet de Protagonist de
+                    wereld zien te redden van de ondergang, reizend door een
+                    schemerwereld van internationale spionage op een missie die
+                    zich afspeelt buiten de bestaande tijd. Niet tijdreizen,
+                    maar Inversie.
+                  </p>
+                </li>
 
                 <a href="videoplayer.html">
-                  <button id="playButton"><img src="Afbeeldingen/play-32.png" style="height: 20px;"/></button>
+                  <button id="playButton">
+                    <img src="Afbeeldingen/play-32.png" style="height: 20px" />
+                  </button>
                 </a>
                 <!-- <video controls autoplay poster="../assets/poster.png">
                   <source src="Trailers/TENET - NEW TRAILER.mp4" type="video/mp4">
@@ -93,6 +121,41 @@
 
     <article>
       <div class="categorie">
+        <!--Filter 1-->
+        <select class="filtersGenre">
+          <option value="" disabled selected>Genre</option>
+          <option value="Actie">Actie</option>
+          <option value="Horror">Horror</option>
+          <option value="Drama">Drama</option>
+          <option value="Thriller">Thriller</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+
+        <!--Filter 2-->
+        <select class="filtersRegiseur">
+          <option value="" disabled selected>Regiseur</option>
+          <option value="Quentin_Tarantino">Quentin Tarantino</option>
+          <option value="Steven_Spielberg">Steven Spielberg</option>
+          <option value="Christopher_Nolan">ChristopherNolan</option>
+        </select>
+
+        <!--Filter 3-->
+        <select class="filtersJaar">
+          <option value="" disabled selected>Publicatie jaar</option>
+          <option value="2020">2020</option>
+          <option value="2019">2019</option>
+          <option value="2018">2018</option>
+          <option value="2017">2017</option>
+          <option value="2016">2016</option>
+          <option value="2015">2015</option>
+          <option value="2014">2014</option>
+          <option value="2013">2013</option>
+          <option value="2012">2012</option>
+        </select>
+
+        <!--Searchbar-->
+        <input type="text" id="searchBar">
+
         <h2>Populair op Fletnix</h2>
         <div class="wrapper">
           <a href="#modal">
@@ -163,7 +226,7 @@
           <h2>Dingetjes</h2>
           <ul>
             <li>IMDB</li>
-          <li>Hot!</li>
+            <li>Hot!</li>
           </ul>
         </div>
       </div>
