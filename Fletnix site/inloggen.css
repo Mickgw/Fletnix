@@ -47,6 +47,7 @@
 }
 
 .inlogVeld h2 {
+    margin-top: 0 !important;
     color: white;
 }
 
@@ -77,6 +78,10 @@ input {
 input::placeholder {
     font-size: 15px;
 
+}
+
+input:focus {
+    outline: #4fa5fc;
 }
 
 input button {
