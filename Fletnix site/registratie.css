@@ -19,10 +19,10 @@
   filter: blur(2px);
 }
 
-.inlogFormulier {
+.registratieFormulier {
   position: relative;
 
-  padding-bottom: 18vw;
+  padding-bottom: 7vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -35,7 +35,7 @@
   );
 }
 
-.inlogVeld {
+.registratieVeld {
   padding-top: 15%;
   position: relative;
   box-sizing: relative;
@@ -46,7 +46,7 @@
   text-align: center;
 }
 
-.inlogVeld h2 {
+.registratieVeld h2 {
   margin-top: 0 !important;
   color: white;
 }
