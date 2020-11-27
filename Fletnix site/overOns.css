@@ -104,8 +104,8 @@
     width: 25px;
     height: 25px;
     right: -17px;
-    background-color: white;
-    border: 4px solid #FF9F55;
+    background-color:  #1c8dff;
+    border: 4px solid black;
     top: 15px;
     border-radius: 50%;
     z-index: 1;
@@ -144,7 +144,7 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid white;
+    border: medium solid ;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
@@ -157,9 +157,10 @@
   /* The actual content */
   .containercontent {
     padding: 20px 30px;
-    background-color: blue;
+    background-color: #1c8dff;
     position: relative;
     border-radius: 6px;
+    width: 60vw;
   }
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -175,7 +176,7 @@
     padding-left: 70px;
     padding-right: 25px;
     }
-    
+
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
     left: 60px;
