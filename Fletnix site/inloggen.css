@@ -1,29 +1,81 @@
 * {
-    font-family: "Roboto", sans-serif;
-  }
-
-body{
-    background-color: black;
+  font-family: "Roboto", sans-serif;
 }
-.inlogFormulier{
-position: relative;
-padding-top: 20vw;
-padding-left: 50%;
 
+.achtergrondOverlay {
+  width: inherit;
+  height: inherit;
+  z-index: 999;
+  position: absolute;
+}
 
+.achtergrondImage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+  background-size: inherit;
+  filter: blur(2px);
 }
-.inlogVeld{
-    position: relative;
-    margin-left: -10vw;
-    box-sizing: relative;
-    border-radius: 12px;
-    font-size: 20px;
-   
-}
-.inlogKnop{
-    position: relative;
-    font-size: 20px;
-    border-radius: 20px;
+
+.inlogFormulier {
+  position: relative;
   
+  padding-bottom: 18vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 8%,
+    rgba(0, 0, 0, 0.4514180672268907) 50%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
 
+.inlogVeld {
+  padding-top: 15%;
+  position: relative;
+  box-sizing: relative;
+  border-radius: 12px;
+  font-size: 20px;
+
+  /*Plaatst form in het midden*/
+  text-align: center;
+}
+
+.inlogVeld h2 {
+    color: white;
+}
+
+form {
+    /*Centered form*/
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 40%;
+    background-color: blue;
+}
+
+label {
+
+}
+
+input {
+    margin-bottom: 2%;
+    border: none !important;
+    padding: 5px 10px;
+}
+
+input::placeholder {
+    font-size: 15px;
+
+}
+
+.inlogKnop {
+  position: relative;
+  font-size: 20px;
+  border-radius: 20px;
 }
