@@ -2,23 +2,6 @@ body{
     background-color: black;
     margin-top: 20px;
 }
-
-.achtergrondOverlay {
-    width: inherit;
-    height: inherit;
-    z-index: 999;
-    position: absolute;
-  }
-  
-  .achtergrondImage {
-    position: absolute;
-    z-index: -1;
-    width: inherit;
-    height: inherit;
-    background-image: url("Afbeeldingen/Content_achtergrond.jpg");
-    background-size: inherit;
-    filter: blur(2px);
-  }
 /*============================Begin profiel pagina=====================================================*/
   .ui-w-80 {
     width: 80px !important;
