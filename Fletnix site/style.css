@@ -112,12 +112,17 @@ article {
   height: 12vw;
 }
 
+.afbeeldingSection1 {
+  background-image: url(Afbeeldingen/Aanbod_abonnementen.jpg);
+}
 
+.afbeeldingSection2 {
+  background-image: url(Afbeeldingen/Film_overzicht_homepage_image.jpg);
+}
 .afbeeldingSection1,
 .afbeeldingSection2 {
-  /*afbeelding*/
-  background-image: url(Afbeeldingen/abonnement.png);
-  background-size: cover;
+  /*afbeelding*/  
+  background-size: contain;
   margin: auto;
 
   /*afmeting afbeelding*/

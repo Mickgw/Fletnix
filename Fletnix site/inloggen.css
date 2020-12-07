@@ -22,7 +22,7 @@
 .inlogFormulier {
   position: relative;
   
-  padding-bottom: 18vw;
+  padding-bottom: 12vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -63,10 +63,6 @@ form {
 
     border-radius: 1em;
     background-color: #242424;
-}
-
-label {
-
 }
 
 input {

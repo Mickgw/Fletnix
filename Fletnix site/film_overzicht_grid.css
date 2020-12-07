@@ -12,7 +12,9 @@ article {
     margin-right: var(--column-spacing-footer);
   }
 
-
+  .filters {
+    margin-left: 3%;
+  }
 
   .filtersGenre, .filtersRegiseur, .filtersJaar {
     display: flex;
