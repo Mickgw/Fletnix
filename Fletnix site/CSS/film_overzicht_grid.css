@@ -156,7 +156,7 @@ article {
   
   .film {
     /* border: 2px solid #4fa5fc; */
-    background-image: url("Afbeeldingen/TENET.jpg");
+    background-image: url("../Afbeeldingen_videos/TENET.jpg");
     background-size: cover;
     height: 95%;
   

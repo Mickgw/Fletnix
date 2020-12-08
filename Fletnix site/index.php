@@ -11,9 +11,9 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <!--CSS files-->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
 
 
   <!--FONT-->

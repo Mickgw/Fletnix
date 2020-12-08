@@ -14,15 +14,15 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-image: url("Afbeeldingen/Content_achtergrond.jpg");
+  background-image: url("../Afbeeldingen_videos/Content_achtergrond.jpg");
   background-size: inherit;
   filter: blur(2px);
 }
 
-.registratieFormulier {
+.inlogFormulier {
   position: relative;
-
-  padding-bottom: 7vw;
+  
+  padding-bottom: 12vw;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -35,8 +35,8 @@
   );
 }
 
-.registratieVeld {
-  padding-top: 11%;
+.inlogVeld {
+  padding-top: 15%;
   position: relative;
   box-sizing: relative;
   border-radius: 12px;
@@ -46,40 +46,40 @@
   text-align: center;
 }
 
-.registratieVeld h2 {
-  margin-top: 0 !important;
-  color: white;
+.inlogVeld h2 {
+    margin-top: 0 !important;
+    color: white;
 }
 
 form {
-  /*Centered form*/
-  margin-left: auto;
-  margin-right: auto;
+    /*Centered form*/
+    margin-left: auto;
+    margin-right: auto;
 
-  padding-top: 1%;
-  padding-bottom: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
 
-  width: 30%;
+    width: 30%;
 
-  border-radius: 1em;
-  background-color: #242424;
+    border-radius: 1em;
+    background-color: #242424;
 }
 
 input {
-  margin-bottom: 2%;
-  border: none !important;
-  padding: 5px 10px;
+    margin-bottom: 2%;
+    border: none !important;
+    padding: 5px 10px;
 }
 
 input::placeholder {
-  font-size: 15px;
+    font-size: 15px;
+
 }
 
 input:focus {
-  outline: #4fa5fc;
+    outline: #4fa5fc;
 }
 
-.soortAbonnement {
-  padding: 5px 40px;
-  margin-bottom: 3%;
+input button {
+    background-color: red;
 }

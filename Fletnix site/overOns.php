@@ -6,10 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!--CSS files-->
-  <link rel="stylesheet" href="overOns.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet" href="footer.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="CSS/overOns.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
 
 
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css" />

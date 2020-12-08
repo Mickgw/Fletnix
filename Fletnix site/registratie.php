@@ -11,10 +11,9 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <!--CSS files-->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet" href="footer.css" />
-  <link rel="stylesheet" href="registratie.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
+  <link rel="stylesheet" href="CSS/registratie.css" />
 
   <!--FONT-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />

@@ -11,10 +11,9 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
   <!--CSS files-->
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="header.css" />
-  <link rel="stylesheet" href="footer.css" />
-  <link rel="stylesheet" href="inloggen.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />
+  <link rel="stylesheet" href="CSS/inloggen.css" />
 
   <!--FONT-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
@@ -40,7 +39,7 @@
 
         <!--Wachtwoord-->
         <input type="text" id="wachtwoord" name="wachtwoord" value="********" /><br />
-        <a href="index2.html">
+        <a href="HTML/index2.html">
           <input type="button" value="Login" />
         </a>
         <a href="registratie.php">
